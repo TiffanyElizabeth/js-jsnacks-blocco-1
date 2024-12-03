@@ -12,7 +12,7 @@ const guests = [
   ];
 
 //2. Chiede all'utente il suo nome
-let name = prompt("Qual è tuo nome?");
+const name = prompt("Qual è tuo nome?");
 
 //3. Variabile per verificare se il nome 
 let found = false;
@@ -22,11 +22,11 @@ for (let i=0; i < guests.length; i++) {
     if (guests[i] === name) {
         found=true
     }
-}
+};
 
 //5. Comunica se il utente puo participare alla festa
 if(found) {
     alert("Puoi participare alla festa, " + name)
 } else {
     alert("Mi dispiace, " + name + ", non puoi partecipare alla festa")
-}
+};
